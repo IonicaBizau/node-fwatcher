@@ -1,0 +1,32 @@
+{
+  "name": "filewatcher",
+  "version": "1.0.0",
+  "description": "Watch files for changes.",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "is-there": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:IonicaBizau/node-filewatcher.git"
+  },
+  "keywords": [
+    "file",
+    "watch",
+    "rename",
+    "event"
+  ],
+  "author": "Ionică Bizău <bizauionica@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/node-filewatcher/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/node-filewatcher"
+}
