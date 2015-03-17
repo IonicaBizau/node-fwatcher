@@ -1,5 +1,5 @@
 {
-  "name": "filewatcher",
+  "name": "fwatcher",
   "version": "1.0.0",
   "description": "Watch files for changes.",
   "main": "lib/index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:IonicaBizau/node-filewatcher.git"
+    "url": "git@github.com:IonicaBizau/fwatcher.git"
   },
   "keywords": [
     "file",
@@ -26,7 +26,7 @@
   "author": "Ionică Bizău <bizauionica@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IonicaBizau/node-filewatcher/issues"
+    "url": "https://github.com/IonicaBizau/node-fwatcher/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/node-filewatcher"
+  "homepage": "https://github.com/IonicaBizau/node-fwatcher"
 }

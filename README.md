@@ -1,25 +1,25 @@
 ![File Watcher](http://i.imgur.com/dOCnOFb.png)
 
-# filewatcher
+# File Watcher
 Watch files for changes. This works fine when working in [VIM](http://www.vim.org/),
 since VIM renames the files when saving them.
 
 ## Installation
 
 ```sh
-$ npm install filewatcher
+$ npm install fwatcher
 ```
 
 ## Example
 
 ```js
 // Dependencies
-var FileWatcher = require("filewatcher");
+var FileWatcher = require("fwatcher");
 
 // Listen for changes
 FileWatcher(__dirname + "/test.txt", function (err, ev, path) {
     /* do something */
-});                                                      
+});
 ```
 
 ## Documentation
