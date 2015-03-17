@@ -1,4 +1,4 @@
-![File Watcher](http://i.imgur.com/dOCnOFb.png)
+![File Watcher](http://i.imgur.com/vy4T9a6.png)
 
 # File Watcher
 Watch files for changes. This works fine when working in [VIM](http://www.vim.org/),
