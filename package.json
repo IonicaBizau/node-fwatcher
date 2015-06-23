@@ -4,10 +4,7 @@
   "description": "Watch files for changes.",
   "main": "lib/index.js",
   "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "is-there": "^4.0.0"
+    "example": "example"
   },
   "devDependencies": {},
   "scripts": {
@@ -24,9 +21,14 @@
     "event"
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com>",
-  "license": "MIT",
+  "license": "KINDLY",
   "bugs": {
     "url": "https://github.com/IonicaBizau/node-fwatcher/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/node-fwatcher"
+  "homepage": "https://github.com/IonicaBizau/node-fwatcher",
+  "dependencies": {
+    "bug-killer": "^4.0.0",
+    "is-there": "^4.0.0",
+    "ul": "^5.0.0"
+  }
 }
