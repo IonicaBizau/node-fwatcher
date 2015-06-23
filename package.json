@@ -7,7 +7,7 @@
     "test": "test"
   },
   "dependencies": {
-    "is-there": "^1.1.0"
+    "is-there": "^4.0.0"
   },
   "devDependencies": {},
   "scripts": {
