@@ -29,7 +29,8 @@
   "dependencies": {
     "bug-killer": "^4.0.0",
     "is-there": "^4.0.0",
-    "ul": "^5.0.0"
+    "ul": "^5.0.0",
+    "abs": "^1.0.0"
   },
   "blah": {
       "h_img": "http://i.imgur.com/vy4T9a6.png"
