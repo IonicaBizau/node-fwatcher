@@ -1,6 +1,6 @@
 {
   "name": "fwatcher",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Watch files for changes.",
   "main": "lib/index.js",
   "directories": {
@@ -16,7 +16,7 @@
     "rename",
     "event"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com>",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "license": "KINDLY",
   "dependencies": {
     "bug-killer": "^4.0.0",
