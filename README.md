@@ -1,16 +1,20 @@
+
 [![fwatcher](http://i.imgur.com/vy4T9a6.png)](#)
 
 # fwatcher [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/fwatcher.svg)](https://www.npmjs.com/package/fwatcher) [![Downloads](https://img.shields.io/npm/dt/fwatcher.svg)](https://www.npmjs.com/package/fwatcher) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > Watch files for changes.
 
-## Installation
+## :cloud: Installation
 
 ```sh
 $ npm i --save fwatcher
 ```
 
-## Example
+
+## :clipboard: Example
+
+
 
 ```js
 // Dependencies
@@ -25,6 +29,7 @@ var watcher = FileWatcher(__dirname + "/test.txt", function (err, ev, path) {
 });
 setTimeout(watcher.off.bind(watcher), 5000);
 
+
 // Listen only for one change
 FileWatcher(__dirname + "/once.txt", true, function (err, ev, path) {
     if (err) { return Logger.log(err, "error"); }
@@ -32,7 +37,8 @@ FileWatcher(__dirname + "/once.txt", true, function (err, ev, path) {
 });
 ```
 
-## Documentation
+## :memo: Documentation
+
 
 ### `Watcher(path, handler)`
 Creates a new instance of the internal `Watcher`.
@@ -58,17 +64,20 @@ the evenit name and the third one is the file path.
 #### Return
 - **Watcher** The watcher instance.
 
-## How to contribute
+
+
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Where is this library used?
+## :dizzy: Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
- - [`ape-watching`](https://github.com/ape-repo/ape-watching#readme) by Taka Okunishi
 
- - [`web-term`](https://github.com/IonicaBizau/web-term)
+ - [`ape-watching`](https://github.com/ape-repo/ape-watching#readme) (by Taka Okunishi)—ape framework module for watching files.
+ - [`element-status`](https://github.com/callahanrts/element#readme) (by CallahanRTS)—An electron based status bar
+ - [`web-term`](https://github.com/IonicaBizau/web-term)—A full screen terminal in your browser.
 
-## License
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
