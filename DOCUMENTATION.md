@@ -6,6 +6,7 @@ You can see below the API reference of this module.
 Creates a new instance of the internal `Watcher`.
 
 #### Params
+
 - **String** `path`: The path to the file.
 - **Function** `handler`: A function called when the file changes.
 
@@ -16,6 +17,7 @@ Removes the listener.
 Creates a new file watcher.
 
 #### Params
+
 - **String** `path`: The path to the file.
 - **Boolean|Options** `options`: A boolean value representing the `once` value or an object containing the following fields:
 
