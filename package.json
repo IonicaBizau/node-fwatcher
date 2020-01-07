@@ -1,6 +1,6 @@
 {
   "name": "fwatcher",
-  "version": "2.2.9",
+  "version": "2.3.0",
   "description": "Watch files for changes.",
   "main": "lib/index.js",
   "directories": {
