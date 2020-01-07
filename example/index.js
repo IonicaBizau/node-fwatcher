@@ -2,7 +2,6 @@
 const FileWatcher = require("../lib")
     , Logger = require("bug-killer")
 
-
 // Listen for changes for 5 seconds
 const watcher = new FileWatcher(`${__dirname}/test.txt`, (err, ev, path) => {
     if (err) { return Logger.log(err, "error") }
