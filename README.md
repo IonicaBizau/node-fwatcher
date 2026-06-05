@@ -76,27 +76,60 @@ yarn add fwatcher
 
 
 ```js
-// Dependencies
-const FileWatcher = require("fwatcher")
-    , Logger = require("bug-killer")
+import fileWatcher from "fwatcher";
 
 // Listen for changes for 5 seconds
-const watcher = new FileWatcher(`${__dirname}/test.txt`, (err, ev, path) => {
-    if (err) { return Logger.log(err, "error") }
-    Logger.log([ev, path].join(" "))
-})
-setTimeout(watcher.off.bind(watcher), 5000)
-
+const watcher = new fileWatcher(`example/test.txt`, (err, ev, path) => {
+    if (err) { return console.error(err, "error"); }
+    console.log([ev, path].join(" "));
+});
+setTimeout(() => watcher.off(), 5000);
 
 // Listen only for one change
-new FileWatcher(`${__dirname}/once.txt`, true, (err, ev, path) => {
-    if (err) { return Logger.log(err, "error") }
-    Logger.log([ev, path].join(" "))
-})
+new fileWatcher(`example/once.txt`, true, (err, ev, path) => {
+    if (err) { return console.error(err, "error"); }
+    console.log([ev, path].join(" "));
+});
 ```
 
 
 
+
+
+
+
+
+
+
+
+## :memo: Documentation
+
+
+### `Watcher(path, handler)`
+Creates a new instance of the internal `Watcher`.
+
+#### Params
+
+- **string** `path`: The path to the file.
+- **Function** `handler`: A function called when the file changes.
+
+### `off()`
+Removes the listener.
+
+### `FileWatcher(path, options, callback)`
+Creates a new file watcher.
+
+#### Params
+
+- **string** `path`: The path to the file.
+- **boolean|Options** `options`: A boolean value representing the `once` value or an object containing the following fields:
+
+ - `once` (Boolean): If `true`, the handler is deleted after first event.
+- **Function** `callback`: This function will be called when the file is changed or renamed. The first parameter is the error, the second one is
+the evenit name and the third one is the file path.
+
+#### Return
+- **Watcher** The watcher instance.
 
 
 
@@ -115,41 +148,6 @@ There are few ways to get help:
  1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
  2. For bug reports and feature requests, open issues. :bug:
  3. For direct and quick help, you can [use Codementor](https://www.codementor.io/johnnyb). :rocket:
-
-
-
-
-
-
-
-## :memo: Documentation
-
-
-### `Watcher(path, handler)`
-Creates a new instance of the internal `Watcher`.
-
-#### Params
-
-- **String** `path`: The path to the file.
-- **Function** `handler`: A function called when the file changes.
-
-### `off()`
-Removes the listener.
-
-### `FileWatcher(path, options, callback)`
-Creates a new file watcher.
-
-#### Params
-
-- **String** `path`: The path to the file.
-- **Boolean|Options** `options`: A boolean value representing the `once` value or an object containing the following fields:
-
- - `once` (Boolean): If `true`, the handler is deleted after first event.
-- **Function** `callback`: This function will be called when the file is changed or renamed. The first parameter is the error, the second one is
-the evenit name and the third one is the file path.
-
-#### Return
-- **Watcher** The watcher instance.
 
 
 
@@ -198,16 +196,6 @@ Thanks! :heart:
 
 
 
-
-
-
-## :dizzy: Where is this library used?
-If you are using this library in one of your projects, add it in this list. :sparkles:
-
- - `ape-watching`
- - `element-status`
- - `rucksack`
- - `web-term`
 
 
 

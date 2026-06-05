@@ -7,7 +7,7 @@ Creates a new instance of the internal `Watcher`.
 
 #### Params
 
-- **String** `path`: The path to the file.
+- **string** `path`: The path to the file.
 - **Function** `handler`: A function called when the file changes.
 
 ### `off()`
@@ -18,8 +18,8 @@ Creates a new file watcher.
 
 #### Params
 
-- **String** `path`: The path to the file.
-- **Boolean|Options** `options`: A boolean value representing the `once` value or an object containing the following fields:
+- **string** `path`: The path to the file.
+- **boolean|Options** `options`: A boolean value representing the `once` value or an object containing the following fields:
 
  - `once` (Boolean): If `true`, the handler is deleted after first event.
 - **Function** `callback`: This function will be called when the file is changed or renamed. The first parameter is the error, the second one is
