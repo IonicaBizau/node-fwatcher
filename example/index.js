@@ -1,17 +1,14 @@
-// Dependencies
-const FileWatcher = require("../lib")
-    , Logger = require("bug-killer")
+import fileWatcher from "../lib/index.js";
 
 // Listen for changes for 5 seconds
-const watcher = new FileWatcher(`${__dirname}/test.txt`, (err, ev, path) => {
-    if (err) { return Logger.log(err, "error") }
-    Logger.log([ev, path].join(" "))
-})
-setTimeout(watcher.off.bind(watcher), 5000)
-
+const watcher = new fileWatcher(`example/test.txt`, (err, ev, path) => {
+    if (err) { return console.error(err, "error"); }
+    console.log([ev, path].join(" "));
+});
+setTimeout(() => watcher.off(), 5000);
 
 // Listen only for one change
-new FileWatcher(`${__dirname}/once.txt`, true, (err, ev, path) => {
-    if (err) { return Logger.log(err, "error") }
-    Logger.log([ev, path].join(" "))
-})
+new fileWatcher(`example/once.txt`, true, (err, ev, path) => {
+    if (err) { return console.error(err, "error"); }
+    console.log([ev, path].join(" "));
+});
